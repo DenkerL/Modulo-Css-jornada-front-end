@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Posicionamento - Static, Relative, Absolute e Fixed</title>
+        <style>
+            .container{
+                background: violet;
+                color: white;
+                margin: 40px;
+                position: relative;
+                height: 150px;
+                
+            /*static*/
+
+            /*position: static;
+
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+            static não pega o posicionamento*/
+
+            /*relative*/
+
+            /*position: relative;
+            top: 10px;
+            left: 20px;
+            bottom: 20px;
+            right: 50px;*/
+            }
+
+            .filho-relative{
+                background: red;
+                position: relative;
+                top: 10px;
+                left: 20px;
+                bottom: 20px;
+                right: 50px;
+                width: 120px;
+            }
+
+            .filho-absolute{
+                position: absolute;
+                background: red;
+                top: 100px;
+                right: 0px;
+            }
+            .fixed{
+                font-size: 50px;
+                position: fixed;
+                background: blue;
+                color: white;
+                top: 20px;
+                z-index: 999;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="fixed">
+           Texto Fixed
+        </div>
+
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">
+                texto-2
+            </div>
+            texto 3
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-absolute">
+                texto-2
+            </div>
+            texto 3
+        </div>
+    </body>
+</html>

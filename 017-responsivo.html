@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Responsivo</title>
+        <style>
+            body{
+                background: red;
+                color: white;
+                font-size: 30px;
+            }
+
+            p{
+                display: none;
+            }
+
+            @media (max-width: 500px){
+                body{
+                    background: black;
+                }
+            }
+            @media (max-width: 320px){
+                body{
+                    font-size: 100px;
+                    color: black;
+                    background: purple;
+                }    
+                p{
+                    display: block;
+                    font-size: 50px;
+                    color: blue;
+                }            
+            }
+        </style>
+    </head>
+
+    <body>
+        Texto 1 
+
+        <p>
+            Texto 2
+        </p>
+    </body>
+</html>
